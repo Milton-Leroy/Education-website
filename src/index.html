@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="font-Roboto mx-auto overflow-x-hidden">
+
+    <!--Nav bar and Hero Section p-->
+    <section class="bg-[#FDF8EE] flex flex-col gap-y-20 md:gap-y-32 pl-8 md:pl-40 relative pb-28" data-aos="flip-left" data-aos="slide-up" 
+        data-aos-duration="1000" ata-aos-easing="ease-in">
+
+        <!-- Desktop Navbar -->
+        <div class="flex justify-between pt-8 md:pt-16">
+
+            <div class="h-12 w-40"><img src="./images/logo.png" alt="logo" class="object-cover"></div>
+
+            <div class="hidden md:block">
+                <ul class="flex items-center text-[#1D1D1D]">
+                    <li class="desktop_nav">Home</li>
+                    <li class="desktop_nav">About us</li>
+                    <li class="desktop_nav">Courses</li>
+                    <li class="desktop_nav">Our Services</li>
+                    <li class="desktop_nav">Contact us</li>
+                    <button class="ml-8 bg-[#4D2C5E] text-white text-2xl  py-4 px-16 rounded-full mr-16 hover:bg-purple-800 transition-colors duration-300">
+                        Sign In
+                    </button>
+                </ul>
+            </div>
+
+            <!-- Mobile Navbar Toggle Button (Hamburger buton) -->
+            <button class="md:hidden focus:outline-none mr-8" id="mobile-menu-button">
+                <svg class="w-8 h-8 text-[#1D1D1D]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Mobile Navbar -->
+        <div class="md:hidden fixed inset-0 bg-[#FDF8EE] z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+
+            <div class="flex justify-between items-center p-6">
+                <img src="./images/logo.png" alt="" class="h-10 w-36">
+
+                <button class="focus:outline-none" id="close-mobile-menu">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+            <ul class="flex flex-col items-center text-[#1D1D1D] mt-4">
+                <li class="mobile_nav">Home</li>
+                <li class="mobile_nav">About us</li>
+                <li class="mobile_nav">Courses</li>
+                <li class="mobile_nav">Our Services</li>
+                <li class="mobile_nav">Contact us</li>
+                <button class="my-4 bg-[#4D2C5E] text-white text-2xl py-4 px-16 rounded-full hover:bg-purple-800 transition-colors duration-300">
+                    Sign In
+                </button>
+            </ul>
+        </div>
+    
+        <!-- Hero Section -->
+        
+        <div class="flex flex-col md:flex-row md: z-10 pr-8 md:pr-28">
+    
+            <div class="flex flex-col w-full md:w-1/2 ">
+
+                <!-- decorative images -->               
+                    <img src="images/littleCircle.png" alt="" class="absolute top-[10%] md:top-[15%] left-[5%]">
+                    <img src="images/bulbgif.png" alt="" class="absolute top-[30%] right-[6%] md:top-[15%] md:right-[16%]">
+                    <img src="images/circle.png" alt="" class="absolute top-[45%] left-[40%] md:top-[82%] md:right-[33%]">
+                    <img src="images/rule.png" alt="" class="absolute top-[12%] md:top-[16%] left-[40%] md:left-[35%]">
+                    <img src="images/computer.png" alt="" class="hidden md:absolute top-[22%] left-[55%]">
+                    <img src="images/pen.png" alt="" class="absolute top-[48%] right-[2%]">
+                    <img src="images/globe.png" alt="" class="absolute top-[28%] left-[0px] md:top-[80%] md:right-2">
+                    <img src="images/testTube.png" alt="" class="hidden md:absolute top-[76%] left-10">
+                    <img src="images/plane.png" alt="" class="hidden md:absolute top-[75%] left-[17%]">
+                    <img src="images/flower.png" alt="" class="absolute top-[10%] md:top-[15%] right-0 md:right-[2%]">
+                <!-- end of images -->
+
+                <div class="w-full">
+                    <h1 class="font-Roboto font-extrabold text-[80px] text-[#050C26] leading-[100px]">
+                        The
+                        <span class="text-[#ff7426]">Smart</span><br>
+                        Choice For 
+                        <span class="text-[#ff7426]">Future</span>
+                    </h1>
+                
+                    <p class="text-[#8A8A8A] font-Roboto font-medium text-xl leading-[35px] pl-4 mt-5">
+                        Elearn is a global training provider based across the UK that <br>
+                        specialises in accredited and bespoke training courses. <br>
+                        We crush the...
+                    </p>
+                </div>
+    
+                <div class="flex mt-[40px] items-center">
+                    <div class="relative w-full flex justify-center">
+                      <div class="relative w-full">
+                        <input
+                          type="text"
+                          placeholder="Search for a location..."
+                          class="bg-white h-16 md:h-20 w-full rounded-full pl-14 pr-32 shadow-md placeholder:text-[#0F335E] placeholder:text-xl text-[#0F335E] text-xl transition-all focus:pl-14"
+                          oninput="this.nextElementSibling.style.display = this.value ? 'none' : 'block';"
+                        />
+                        <svg
+                          class="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-[#0F335E] pointer-events-none transition-all"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z"
+                          ></path>
+                        </svg>
+                        <button
+                          class="absolute right-1 md:right-2 top-1/2 transform -translate-y-1/2 bg-[#4D2C5E] text-white h-[55px] md:h-[72px] w-[30%] md:w-[20%] text-xl font-medium 
+                          rounded-full hover:bg-purple-700 transition-colors duration-300">Continue
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-full h-64 md:h-auto md:w-1/2">
+                <img src="/src/images/OBJECTS.png" alt="Hero Image" class="object-cover">
+            </div>
+    
+        </div>
+        
+        <!-- yellow circle -->
+        <div class="absolute top-[14%] md:top-[25%] right-10 md:right-16 w-[408px] h-[408px] border-[50px] border-[#F2C94C33] rounded-full z-0"></div>
+    
+    </section>
+       
+    <!-- purple section directly beneath the hero section -->
+    <div class="flex justify-center relative -top-32" data-aos="slide-up" data-aos-duration="2000">
+        <div class="bg-[#4D2C5E] h-auto md:w-[90%] w-[95%] rounded-lg flex flex-col md:flex-row mt-[50px] justify-evenly py-14 px-4">
+            
+            <!-- First Section -->
+            <div class="flex gap-x-3 items-center mb-8 md:mb-0">
+                <div class="h-[100px] w-[100px] bg-[#7f698a60] rounded-[23px] flex justify-center items-center">
+                    <img src="/src/images/online-test 1.png" alt="certificate" class="w-[70px] h-[70px]">
+                </div>
+                <div class="text-white">
+                    <b class="text-[24px] md:text-[30px] font-bold leading-[100%]">Learn the Latest Skills</b>
+                    <p class="text-[14px] mt-2 md:mt-0 md:text-[15px] leading-[20px] md:leading-[28px] text-white/60 font-medium">
+                        Contrary to popular belief, lorem ipsum is <br>
+                        not simply random text. it has roots in a <br>
+                        BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Second Section -->
+            <div class="flex gap-x-3 items-center mb-8 md:mb-0">
+                <div class="h-[100px] w-[100px] bg-[#7f698a60] rounded-[23px] flex justify-center items-center">
+                    <img src="/src/images/exam 1.png" alt="certificate" class="w-[70px] h-[70px]">
+                </div>
+                <div class="text-white">
+                    <b class="text-[24px] md:text-[30px] font-bold leading-[100%]">Get Ready For a Career</b>
+                    <p class="text-[14px] mt-2 md:mt-0 md:text-[15px] leading-[20px] md:leading-[28px] text-white/60 font-medium">
+                        Contrary to popular belief, lorem ipsum is <br>
+                        not simply random text. it has roots in a <br>
+                        BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Third Section -->
+            <div class="flex gap-x-3 items-center">
+                <div class="h-[100px] w-[100px] bg-[#7f698a60] rounded-[23px] flex justify-center items-center">
+                    <img src="/src/images/certification 1.png" alt="certificate" class="w-[70px] h-[70px]">
+                </div>
+                <div class="text-white">
+                    <b class="text-[24px] md:text-[30px] font-bold leading-[100%]">Earn a Certificate</b>
+                    <p class="text-[14px] mt-2 md:mt-0 md:text-[15px] leading-[20px] md:leading-[28px] text-white/60 font-medium">
+                        Contrary to popular belief, lorem ipsum is <br>
+                        not simply random text. it has roots in a <br>
+                        BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- First 3 cards section -->
+    <section class="-mt-8 mb-10" data-aos-delay="1000">
+
+        <!-- Header Section -->
+        <div class="flex justify-between items-center px-4" data-aos="slide-down">
+            <!-- Left Icon -->
+            <div>
+                <img src="/src/images/bulb.png" alt="lamp icon" class="h-[80px] w-[80px]">
+            </div>
+          
+            <!-- Center Title & Description -->
+            <div class="flex flex-col items-center">
+                <h2 class="font-Jost text-[30px] md:text-[50px] font-semibold leading-[140%] text-center">Our Tracks</h2>
+                <p class="text-[#8A8A8A] leading-[120%] text-[16px] md:text-[20px] font-medium font-Jost text-center mt-2">
+                    Lorem ipsum is just dummy text of the printing.
+                </p>
+            </div>
+    
+            <!-- Right Icon -->
+            <div>
+                <img src="/src/images/spiral.png" alt="group icon" class="h-[80px] w-[80px]">
+            </div>
+        </div>
+    
+        <!-- Cards Section -->
+        <div class="w-full flex flex-col mx-auto md:flex-row md:my-10 gap-16 md:gap-5 px-4 md:px-12">
+    
+            <!-- Card 1 -->
+            <div class="font-Poppins w-full md:w-1/3 min-h-[420px] md:min-h-[500px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 duration-300 ease-in-out">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="images/little-girl-participating-online-classes 1.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+                <div class="flex justify-between px-3 text-base mt-2 md:text-lg font-medium md:font-semibold">
+                    <span class="text-[#ACACAC] md:pl-4">UI/UX Design</span>
+                    <div class="text-[#FFA135]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+                <p class="font-normal text-2xl md:text-3xl md:ml-4 mt-2 px-3">
+                    UI/UX Design for beginners <br>
+                    <span class="text-[#FF7426] md:text-lg text-base ml-2 font-extrabold">$98</span>
+                </p>
+     
+                <hr class="w-[95%] mx-auto border border-dotted my-3 md:my-4">
+    
+                <div class="flex px-3 gap-x-5 md:gap-x-8 mt-2 items-center text-[#ACACAC] text-lg mb-10 md:mb-14 md:ml-4">
+                    <span>
+                        <i class="fas fa-clock"></i>
+                        2hrs 30mins
+                    </span>
+                    <span>
+                        <i class="fas fa-video"></i>
+                        34 courses
+                    </span>
+                    <span>
+                        <i class="fas fa-download"></i>
+                        250 sales
+                    </span>
+                </div>
+    
+                <button class="p-5 font-Roboto text-2xl md:text-3xl font-medium text-white bg-[#FF7426] px-5 py-2 md:py-4 rounded-full w-[50%] absolute -bottom-6 md:-bottom-9 left-[50%] -translate-x-1/2">
+                    Join Course
+                </button>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="font-Poppins w-full md:w-1/3 min-h-[420px] md:min-h-[500px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 duration-300 ease-in-out">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto " data-aos="slide-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
+                    <img src="images/image 7.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+                <div class="flex justify-between px-3 text-base mt-2 md:text-lg font-medium md:font-semibold">
+                    <span class="text-[#ACACAC] md:pl-4">UI/UX Design</span>
+                    <div class="text-[#FFA135]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+                <p class="font-normal text-2xl md:text-3xl md:ml-4 mt-2 px-3">
+                    UI/UX Design for beginners <br>
+                    <span class="text-[#FF7426] md:text-lg text-base ml-2 font-extrabold">$98</span>
+                </p>
+     
+                <hr class="w-[95%] mx-auto border border-dotted my-3 md:my-4">
+    
+                <div class="flex px-3 gap-x-5 md:gap-x-8 mt-2 items-center text-[#ACACAC] text-lg mb-10 md:mb-14 md:ml-4">
+                    <span>
+                        <i class="fas fa-clock"></i>
+                        2hrs 30mins
+                    </span>
+                    <span>
+                        <i class="fas fa-video"></i>
+                        34 courses
+                    </span>
+                    <span>
+                        <i class="fas fa-download"></i>
+                        250 sales
+                    </span>
+                </div>
+    
+                <button class="p-5 font-Roboto text-2xl md:text-3xl font-medium text-white bg-[#FF7426] px-5 py-2 md:py-4 rounded-full w-[50%] absolute -bottom-6 md:-bottom-9 left-[50%] -translate-x-1/2">
+                    Join Course
+                </button>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="font-Poppins w-full md:w-1/3 min-h-[420px] md:min-h-[500px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 duration-300 ease-in-out">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto " data-aos="fade-right" data-aos-duration="3000">
+                    <img src="images/image 6.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+                <div class="flex justify-between px-3 text-base mt-2 md:text-lg font-medium md:font-semibold">
+                    <span class="text-[#ACACAC] md:pl-4">UI/UX Design</span>
+                    <div class="text-[#FFA135]">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+                <p class="font-normal text-2xl md:text-3xl md:ml-4 mt-2 px-3">
+                    UI/UX Design for beginners <br>
+                    <span class="text-[#FF7426] md:text-lg text-base ml-2 font-extrabold">$98</span>
+                </p>
+     
+                <hr class="w-[95%] mx-auto border border-dotted my-3 md:my-4">
+    
+                <div class="flex px-3 gap-x-5 md:gap-x-8 mt-2 items-center text-[#ACACAC] text-lg mb-10 md:mb-14 md:ml-4">
+                    <span>
+                        <i class="fas fa-clock"></i>
+                        2hrs 30mins
+                    </span>
+                    <span>
+                        <i class="fas fa-video"></i>
+                        34 courses
+                    </span>
+                    <span>
+                        <i class="fas fa-download"></i>
+                        250 sales
+                    </span>
+                </div>
+    
+                <button class="p-5 font-Roboto text-2xl md:text-3xl font-medium text-white bg-[#FF7426] px-5 py-2 md:py-4 rounded-full w-[50%] absolute -bottom-6 md:-bottom-9 left-[50%] -translate-x-1/2">
+                    Join Course
+                </button>
+            </div>
+          
+        </div>
+        
+
+    </section>
+
+
+    <!-- section with girl -->
+    <section class="mt-32 md:mt-40 bg-[#FDF8EE] flex flex-col md:flex-row justify-center gap-x-32 px-10 md:px-0 pb-16 md:pb-0" data-aos="slide-up" data-aos-duration="3000">
+       
+       <div class="relative" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-delay="500">
+            <div class="md:w-[520px] nd:h-[650px] relative bottom-[-10%]">
+                <img src="images/secondObject.png" alt="image of girl">
+            </div>
+            <div>
+                <img src="images/bulbgif.png" alt="" class="absolute top-0 left-0">
+                <img src="images/flower.png" alt="" class="absolute top-5 right-[-20px] md:top-10 md:right-5">
+                <img src="images/pen.png" alt="" class="absolute top-[55%] right-[-14%]">
+                <img src="images/circle.png" alt="" class="absolute bottom-[-80px] md:bottom-[6%] right-[100px] md:right-[-5%] z-0">
+                <img src="images/globe.png" alt="" class="hidden md:absolute left-[-14%] bottom-10">
+                <img src="images/computer.png" alt="" class="absolute top-[40%] left-[-14%] ">
+            </div>
+       </div>
+
+       <div class="font-Jost mt-10 md:mt-20" data-aos="zoom-out-right" data-aos-duration="3000" data-aos-delay="1000"> 
+            <h1 class="text-7xl font-bold leading-[90px] text-[#050C26]">Premium <span class="text-orange-500">Learning</span> <br>
+                Experience
+            </h1>
+            <div class="flex gap-3 mt-8 items-center">
+                <div class="bg-[#4D2C5E] w-[90px] h-[90px] flex items-center justify-center rounded-xl">
+                    <img src="images/hearts 1.png" alt="heart logo" class="w-13 h-13">
+                </div>
+                <div>
+                    <p class="font-medium text-[#050C26] text-3xl">Easily Accessible</p>
+                    <span class="font-normal tracking-tight text-2xl text-[#8A8A8A]">Learning Will fell Very Comfortable With Courslab.</span>
+                </div>
+            </div>
+            <div class="flex gap-3 mt-8 items-center">
+                <div class="bg-[#4D2C5E] w-[90px] h-[90px] flex items-center justify-center rounded-xl">
+                    <img src="images/jigsaw 1.png" alt="heart logo" class="w-13 h-13">
+                </div>
+                <div>
+                    <p class="font-medium text-[#050C26] text-3xl">Fun learning expe</p>
+                    <span class="font-normal tracking-tight text-2xl text-[#8A8A8A]">Learning Will fell Very Comfortable With Courslab.</span>
+                </div>
+            </div>
+       </div>
+
+    </section>
+
+    <!-- Heading before slider section -->
+    <div class="flex flex-col items-center mt-36">
+        <h2 class="font-Jost text-[50px] font-semibold leading-[140%] text-center">What student’s say</h2>
+        <p class="text-[#8A8A8A] leading-[120%] text-[20px] font-medium font-Jost text-center mt-2">
+          Lorem ipsum is just dummy text of the printing.
+        </p>
+    </div>
+
+    <!-- slider section -->
+    <section data-aos="slide-down" data-aos-duration="3000" data-aos-delay="500">
+        <!-- Cards -->
+        <div class="mt-14 flex flex-col md:flex-row justify-center gap-3 px-4 md:px-0">
+            <!-- Card 1 -->
+            <div class="w-full md:w-[420px] max-h-[250px] h-auto shadow-md rounded-lg bg-white flex flex-col border px-5" data-aos="zoom-out-up" data-aos-duration="2000" ata-aos-delay="1000">
+                <p class="font-normal font-Roboto tracking-[2px] text-[16px] leading-[150%] text-[#7c7a7a] pr-4 text-left mt-8">
+                    “Teachings of the great explore of truth, 
+                    the master-builder of human happiness. 
+                    no one rejects, dislikes, or avoids pleasure 
+                    itself, pleasure itself”
+                </p>
+                <div class="flex gap-4 mt-5 mb-8">
+                    <div class="w-12 h-12">
+                        <img src="images/Ellipse 34.png" alt="male user" class="object-cover">
+                    </div>
+                    <p class="font-Roboto flex flex-col gap-[2px] justify-center">
+                        <span class="font-semibold text-lg text-[#353535]">Finlay Kirk</span>
+                        <span class="font-medium text-base text-[#8E8E8E]">Web Developer</span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="w-full md:w-[420px] max-h-[250px] h-auto shadow-md rounded-lg bg-white flex flex-col border px-5" data-aos="zoom-in-down" data-aos-duration="2000" ata-aos-delay="1000">
+                <p class="font-normal font-Roboto tracking-[2px] text-[16px] leading-[150%] text-[#7c7a7a] pr-4 text-left mt-8">
+                    “Complete account of the system and
+                    expound the actual Contrary to popular
+                    belief, Lorem Ipsum is not simply 
+                    random text. It has roots”
+                </p>
+                <div class="flex gap-4 mt-5 mb-8">
+                    <div class="w-12 h-12">
+                        <img src="images/Ellipse 34 (1).png" alt="male user" class="object-cover">
+                    </div>
+                    <p class="font-Roboto flex flex-col gap-[2px] justify-center">
+                        <span class="font-semibold text-lg text-[#353535]">Dannette P. Cervantes</span>
+                        <span class="font-medium text-base text-[#8E8E8E]">Web Developer</span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="w-full md:w-[420px] max-h-[250px] h-auto shadow-md rounded-lg bg-white flex flex-col border px-5" data-aos="zoom-out-left" data-aos-duration="2000" ata-aos-delay="1000">
+                <p class="font-normal font-Roboto tracking-[2px] text-[16px] leading-[150%] text-[#7c7a7a] pr-4 text-left mt-8">
+                    “There are many variations of passages
+                    of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form,
+                    by injected humour”
+                </p>
+                <div class="flex gap-4 mt-5 mb-8">
+                    <div class="w-12 h-12">
+                        <img src="images/Ellipse 34 (2).png" alt="male user" class="object-cover">
+                    </div>
+                    <p class="font-Roboto flex flex-col gap-[2px] justify-center">
+                        <span class="font-semibold text-lg text-[#353535]">Clara R. Altman</span>
+                        <span class="font-medium text-base text-[#8E8E8E]">Web Developer</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Buttons -->
+        <div class="hidden md:flex items-center justify-center gap-4 mt-10">
+            <div class="dotActive"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!-- sction with cards under slider -->
+    <section class="my-10" data-aos="fade-down-right" data-aos-duration="1500">
+
+        <!-- Heading Section -->
+        <div class="flex justify-between items-center px-4">
+            <!-- Left Icon -->
+            <div>
+                <img src="/src/images/bulb.png" alt="lamp icon" class="h-[80px] w-[80px]">
+            </div>
+          
+            <!-- Center Title & Description -->
+            <div class="flex flex-col items-center">
+                <h2 class="font-Jost text-[30px] md:text-[50px] font-semibold leading-[140%] text-center">Our Tracks</h2>
+                <p class="text-[#8A8A8A] leading-[120%] text-[16px] md:text-[20px] font-medium font-Jost text-center mt-2">
+                    Lorem ipsum is just dummy text of the printing.
+                </p>
+            </div>
+    
+            <!-- Right Icon -->
+            <div>
+                <img src="/src/images/spiral.png" alt="group icon" class="h-[80px] w-[80px]">
+            </div>
+        </div>
+    
+        <!-- 3 Cards -->
+        <div class="flex flex-col md:flex-row my-10 gap-5 px-4 md:px-12">
+    
+            <!-- Card 1 -->
+            <div class="w-full md:w-1/3 min-h-[420px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 duration-300 
+                ease-in-out" data-aos="slide-up" data-aos-duration="3000">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto">
+                    <img src="images/elegant-young-teacher.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+              
+                <p class="font-Poppins flex flex-col px-5 mt-4">
+                    <span class="text-xl font-semibold">Matthew E. McNatt</span>
+                    <span class="text-base font-medium text-[#868686]">Professor @George Brown College</span>
+                </p>
+    
+                <p class="text-left text-[#ACACAC] text-lg font-normal font-Roboto pl-5 mt-2 pr-10">
+                    Ut enim ad minim veniam, quis nost exercitation
+                    ullamco laboris nisi ut allquip ex commodo.
+                </p>
+    
+                <div class="flex justify-between px-5 my-4">
+                    <span class="font-Poppins text-lg text-[#FF7426] font-medium">Engineering physics</span>
+                    <div class="flex gap-4">
+                        <div><img src="images/Instagram_logo_2016 1.png" alt=""></div>
+                        <div><img src="images/174857 1.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="w-full md:w-1/3 min-h-[420px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 
+                duration-300 ease-in-out" data-aos="slide-down" data-aos-duration="3000">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto">
+                    <img src="images/portrait-female.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+              
+                <p class="font-Poppins flex flex-col px-5 mt-4">
+                    <span class="text-xl font-semibold">Matthew E. McNatt</span>
+                    <span class="text-base font-medium text-[#868686]">Professor @George Brown College</span>
+                </p>
+    
+                <p class="text-left text-[#ACACAC] text-lg font-normal font-Roboto pl-5 mt-2 pr-10">
+                    Ut enim ad minim veniam, quis nost exercitation
+                    ullamco laboris nisi ut allquip ex commodo.
+                </p>
+    
+                <div class="flex justify-between px-5 my-4">
+                    <span class="font-Poppins text-lg text-[#FF7426] font-medium">Engineering physics</span>
+                    <div class="flex gap-4">
+                        <div><img src="images/Instagram_logo_2016 1.png" alt=""></div>
+                        <div><img src="images/174857 1.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="w-full md:w-1/3 min-h-[420px] bg-white rounded-xl shadow-xl border flex flex-col pt-3 relative hover:shadow-2xl hover:scale-105 
+                duration-300 ease-in-out" data-aos="fade" data-aos-duration="3000">
+                <div class="w-[95%] rounded-lg overflow-hidden mx-auto">
+                    <img src="images/female teacher.png" alt="little girls image" class="object-cover w-full h-auto">
+                </div>
+              
+                <p class="font-Poppins flex flex-col px-5 mt-4">
+                    <span class="text-xl font-semibold">Matthew E. McNatt</span>
+                    <span class="text-base font-medium text-[#868686]">Professor @George Brown College</span>
+                </p>
+    
+                <p class="text-left text-[#ACACAC] text-lg font-normal font-Roboto pl-5 mt-2 pr-10">
+                    Ut enim ad minim veniam, quis nost exercitation
+                    ullamco laboris nisi ut allquip ex commodo.
+                </p>
+    
+                <div class="flex justify-between px-5 my-4">
+                    <span class="font-Poppins text-lg text-[#FF7426] font-medium">Engineering physics</span>
+                    <div class="flex gap-4">
+                        <div><img src="images/Instagram_logo_2016 1.png" alt=""></div>
+                        <div><img src="images/174857 1.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us section -->
+    <section class="flex justify-center relative overflow-clip md:mt-16" data-aos="zoom-in" data-aos-duration="3000">
+        <div class="bg-[#4D2C5E] w-[90%] min-h-[250px] rounded-lg mt-[100px] overflow-hidden">
+
+            <div class="overflow-hidden">
+                <span class="circle left-[6%] top-10 md:top-[-20px]"></span>
+                <span class="circle left-0 top-7 md:top-[40px]"></span>
+                <span class="circle right-10 md:right-[4%] top-10 md:top-[-2px]"></span>
+                <span class="circle  right-3 md:right-4 top-10 md:top-[50px]"></span>
+            </div>
+
+            <div class="text-center text-white mt-24 md:mt-20 font-Poppins">
+                <b class="text-4xl md:text-5xl font-semibold mb-4">Subscribe to our newsletter</b>
+                <p class="font-medium text-lg px-10 md:text-xl md:px-0 pt-8 md:pt-4 z-10">Lorem ipsum is just dummy text of the printing.</p>
+            </div>
+            <div class="flex justify-center mb-20">
+                <div class="flex mt-[30px]">
+                    <div class="relative flex items-center justify-center font-Poppins mt-4">
+                        <input type="email" placeholder="Email Address" class="p-4 md:p-8 h-[45px] md:h-[50px] w-[90%] md:w-[500px] rounded-full text-xl text-black
+                            placeholder:text-[#ACACAC] placeholder:text-lg focus:outline-none">
+                        <button class="bg-[#FF7426] text-white text-xl font-semibold h-[42px] md:h-[58px] w-28 md:w-36 rounded-full px-6 md:px-10 
+                            absolute right-5 md:right-1">Send
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="w-20 h-20 md:w-28 md:h-28 absolute left-[8%] md:left-[12%] bottom-2">
+                    <img src="/src/images/spiralorange.png" alt="" class="object-fit">
+                </div>
+                <div class="w-20 h-20 md:w-28 md:h-28 absolute right-[8%] md:right-[15%] bottom-36 md:bottom-8 z-0">
+                    <img src="/src/images/bulb.png" alt="" class="object-cover">
+                </div>
+        </div>
+    </section>
+    
+    <footer class="hidden md:flex justify-evenly flex-wrap gap-10 mt-32 bg-[#FDF8EE] pt-[40px] px-4 md:px-0" data-aos="slide-down" data-aos-duration="3000">
+        <!-- Logo and Description -->
+        <div class="max-w-xs">
+            <img src="/src/images/logo.png" alt="" class="mb-[20px]">
+
+            <p class="text-[#606060] text-lg">
+                Lorem ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem ipsum has been the industry's standard dummy a type specimen book.
+            </p>
+        </div>
+    
+        <!-- Company Links -->
+        <div class="mt-2">
+            <b class="mb-4 text-2xl">Company</b>
+            <p class="text-[#606060] text-lg leading-8 mt-4">
+                <span>About Us</span><br>
+                <span>How to work?</span><br>
+                <span>Popular Course</span><br>
+                <span>Services</span>
+            </p>
+        </div>
+    
+        <!-- Courses Links -->
+        <div class="mt-2">
+            <b class="block mb-2 text-2xl">Courses</b>
+            <p class="text-[#606060] text-lg leading-8 mt-4">
+                <span>Categories</span><br>
+                <span>Offline Courses</span><br>
+                <span>Video Courses</span>
+            </p>
+        </div>
+    
+        <!-- Support Links -->
+        <div class="mt-2">
+            <b class="block mb-2 text-2xl">Support</b>
+            <p class="text-[#606060] text-lg leading-8 mt-4">
+                <span>FAQ</span><br>
+                <span>Help Center</span><br>
+                <span>Career</span><br>
+                <span>Privacy</span>
+            </p>
+        </div>
+    
+        <!-- Contact Info -->
+        <div class="mt-2">
+            <b class="block mb-2 text-2xl">Contact Info</b>
+            <p class="text-[#606060] text-lg leading-8 mt-4">
+                <span>+0913-705-3875</span><br>
+                <span>ElizabethJ@jourrapide.com</span><br>
+                <span>4808 Skinner Hollow Road</span><br>
+                <span>Days Creek, OR 97429</span>
+            </p>
+        </div>
+    
+        <!-- Horizontal Line -->
+        <hr class="w-full border-2 border-solid mt-3">
+    
+        <!-- Copyright Text -->
+        <p class="text-[#606060] font-Roboto text-xl text-center mb-8 w-full">
+            BookStore &copy; All Right Reserved, 2025
+        </p>
+    </footer>
+
+    <footer class="flex flex-col md:hidden justify-center items-center gap-10 mt-28 bg-[#FDF8EE] pt-[40px] px-4 md:px-0" data-aos="slide-down" data-aos-duration="3000">
+        <!-- Logo and Description -->
+        <div class="max-w-xs text-center">
+            <img src="/src/images/logo.png" alt="" class="mb-[20px] mx-auto">
+            <p class="text-[#606060] text-lg">
+                Lorem ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem ipsum has been the industry's standard dummy a type specimen book.
+            </p>
+        </div>
+    
+        <!-- Company and Courses Links -->
+        <div class="flex flex-wrap justify-around w-full px-5 text-2xl">
+            <!-- Company Links -->
+            <div class="mt-2 text-center w-full sm:w-auto">
+                <b class="mb-4 text-2xl">Company</b>
+                <p class="text-[#606060] text-lg leading-8 mt-4">
+                    <span>About Us</span><br>
+                    <span>How to work?</span><br>
+                    <span>Popular Course</span><br>
+                    <span>Services</span>
+                </p>
+            </div>
+            
+            <!-- Courses Links -->
+            <div class="mt-2 text-center w-full sm:w-auto">
+                <b class="block mb-2 text-2xl">Courses</b>
+                <p class="text-[#606060] text-lg leading-8 mt-4">
+                    <span>Categories</span><br>
+                    <span>Offline Courses</span><br>
+                    <span>Video Courses</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Support and Contact Info Links -->
+        <div class="flex flex-wrap justify-around w-full px-5">
+            <!-- Support Links -->
+            <div class="mt-2 text-center w-full sm:w-auto">
+                <b class="block mb-2 text-2xl">Support</b>
+                <p class="text-[#606060] text-lg leading-8 mt-4">
+                    <span>FAQ</span><br>
+                    <span>Help Center</span><br>
+                    <span>Career</span><br>
+                    <span>Privacy</span>
+                </p>
+            </div>
+        
+            <!-- Contact Info -->
+            <div class="mt-2 text-center w-full sm:w-auto">
+                <b class="block mb-2 text-2xl">Contact Info</b>
+                <p class="text-[#606060] text-lg leading-8 mt-4">
+                    <span>+0913-705-3875</span><br>
+                    <span>ElizabethJ@jourrapide.com</span><br>
+                    <span>4808 Skinner Hollow Road</span><br>
+                    <span>Days Creek, OR 97429</span>
+                </p>
+            </div>
+        </div>
+    
+        <!-- Horizontal Line -->
+        <hr class="w-full border-2 border-solid mt-3">
+    
+        <!-- Copyright Text -->
+        <p class="text-[#606060] font-Roboto text-xl text-center mb-8 w-full">
+            BookStore &copy; All Right Reserved, 2025
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

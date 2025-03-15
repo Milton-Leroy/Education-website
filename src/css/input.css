@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mobile_nav{
+    @apply my-4 hover:text-orange-500 transition-colors duration-300 cursor-pointer text-xl font-Roboto font-semibold;
+}
+
+.desktop_nav{
+    @apply ml-8 hover:text-orange-500 transition-colors duration-300 cursor-pointer text-xl font-Roboto font-extrabold;
+}
+
+.dot{
+    @apply w-4 h-4 rounded-full bg-[#C2C2C2];
+}
+
+.dotActive{
+    @apply w-10 h-4 rounded-[32px] bg-[#4D2C5E];
+}
+
+
+.circle{
+    @apply bg-transparent rounded-[100%] p-14 md:p-28 border-2 border-white absolute
+}
